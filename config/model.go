@@ -12,6 +12,7 @@ var ModelMap = map[string]string{
 	"gpt-4.1":                 "gpt41",
 	// "claude-4.0-opus":         "claude40opus",
 	"claude-4.0-opus-think": "claude40opusthinking",
+	"claude-4.1-opus-think": "claude41opusthinking",
 	"o3":                    "o3",
 	"o3-pro":                "o3pro",
 	"gpt-5":                 "gpt5",
@@ -72,3 +73,4 @@ func buildResponseModels() {
 		})
 	}
 }
+
