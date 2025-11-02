@@ -3,7 +3,7 @@ package config
 var ModelReverseMap = map[string]string{}
 var ModelMap = map[string]string{
 	"claude-2": "claude2",
-	"claude-4.5-sonnet": "claude37sonnet",
+	"claude-3.7-sonnet": "claude37sonnet",
 	"claude-3.7-sonnet-think": "claude37sonnetthinking",
 	"claude-4-5-sonnet":       "claude45sonnet",
 	"claude-4.5-sonnet-think": "claude45sonnetthinking",
@@ -81,6 +81,7 @@ func buildResponseModels() {
 		})
 	}
 }
+
 
 
 
