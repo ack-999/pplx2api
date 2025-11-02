@@ -2,13 +2,27 @@ package config
 
 var ModelReverseMap = map[string]string{}
 var ModelMap = map[string]string{
+	"claude-2": "claude2",
+	"claude-4.5-sonnet": "claude37sonnet",
+	"claude-3.7-sonnet-think": "claude37sonnetthinking",
 	"claude-4-5-sonnet":       "claude45sonnet",
 	"claude-4.5-sonnet-think": "claude45sonnetthinking",
 	"gemini-2.5-pro-06-05":    "gemini2flash",
+	"grok4":   "grok4",
+	"grok4-non-thinking":   "grok4nonthinking",
+	"gpt-4o":   "gpt4o",
+	"gpt-41":   "gpt41",
+	"o4-mini":   "o4mini",
 	"o3-pro":                  "o3pro",
 	"gpt-5":                   "gpt5",
 	"gpt-5-think":             "gpt5_thinking",
+	"gpt5-pro":   "gpt5_pro",
+	"claude-4.1-opus":   "claude40opus",
+	"claude-4.0-opus-think":   "claude40opusthinking",
+	"claude-4.1-opus":   "claude41opus",
 	"claude-4.1-opus-think":   "claude41opusthinking",
+    "claude40sonnetthinking-labs":   "claude40sonnetthinking_labs",
+	"claude40opusthinking-labs":   "claude40opusthinking_labs",
 }
 var MaxModelMap = map[string]string{
 	"o3-pro":                "o3pro",
@@ -66,3 +80,4 @@ func buildResponseModels() {
 		})
 	}
 }
+
