@@ -501,6 +501,7 @@ func (c *Client) UloadFileToCloudinary(uploadInfo CloudinaryUploadInfo, contentT
 		}
 	} else {
 		formFields = map[string]string{
+			"x-amz-meta-is_text_only": "true",
 			"acl":                  uploadInfo.ACL,
 			"Content-Type":         "text/plain",
 			"tagging":              uploadInfo.Tagging,
@@ -616,3 +617,4 @@ func (c *Client) GetNewCookie() (string, error) {
 	}
 	return "", fmt.Errorf("session cookie not found")
 }
+
