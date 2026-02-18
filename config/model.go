@@ -6,6 +6,8 @@ var ModelMap = map[string]string{
 	"claude-4-sonnet-think":   "claude37sonnetthinking",
 	"claude-4-5-sonnet":       "claude45sonnet",
 	"claude-4.5-sonnet-think": "claude45sonnetthinking",
+	"claude-4-6-sonnet":       "claude46sonnet",
+	"claude-4.6-sonnet-think": "claude46sonnetthinking",
 	"gemini-2.5-pro":          "gemini25pro",
 	"gemini-3-pro":            "gemini30pro",
 	"kimi-k2-thinking":        "kimik2thinking",
@@ -91,5 +93,6 @@ func buildResponseModels() {
 		})
 	}
 }
+
 
 
